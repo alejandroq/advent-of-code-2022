@@ -1,0 +1,76 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 01 (01)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/01/.build/debug/01",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/01",
+            "preLaunchTask": "swift: Build Debug 01 (01)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release 01 (01)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/01/.build/release/01",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/01",
+            "preLaunchTask": "swift: Build Release 01 (01)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug 01 (day1)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/day1/.build/debug/01",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/day1",
+            "preLaunchTask": "swift: Build Debug 01 (day1)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release 01 (day1)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/day1/.build/release/01",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/day1",
+            "preLaunchTask": "swift: Build Release 01 (day1)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug day2 (day2)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/day2/.build/debug/day2",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/day2",
+            "preLaunchTask": "swift: Build Debug day2 (day2)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release day2 (day2)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/day2/.build/release/day2",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/day2",
+            "preLaunchTask": "swift: Build Release day2 (day2)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug day1 (day1)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/day1/.build/debug/day1",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/day1",
+            "preLaunchTask": "swift: Build Debug day1 (day1)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release day1 (day1)",
+            "program": "${workspaceFolder:advent-calendar-puzzles}/day1/.build/release/day1",
+            "args": [],
+            "cwd": "${workspaceFolder:advent-calendar-puzzles}/day1",
+            "preLaunchTask": "swift: Build Release day1 (day1)"
+        }
+    ]
+}
