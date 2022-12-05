@@ -2,8 +2,6 @@
 import ArgumentParser
 import Foundation
 
-infix operator ~==
-
 struct Day4: ParsableCommand {
   @Argument(help: "input file to evaluate")
   var file: String = "inputs/day4-inputs.txt"
