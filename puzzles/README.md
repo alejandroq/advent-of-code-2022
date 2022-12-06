@@ -1,3 +1,1 @@
-# day2
-
-A description of this package.
+`swift run Puzzle day6`
