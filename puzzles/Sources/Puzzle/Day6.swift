@@ -1,4 +1,5 @@
 // swift run Puzzle day6
+// sliding window problem
 import ArgumentParser
 import Foundation
 
