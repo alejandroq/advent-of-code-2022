@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Puzzle",
+            "program": "${workspaceFolder:puzzles}/.build/debug/Puzzle",
+            "args": [],
+            "cwd": "${workspaceFolder:puzzles}",
+            "preLaunchTask": "swift: Build Debug Puzzle"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release Puzzle",
+            "program": "${workspaceFolder:puzzles}/.build/release/Puzzle",
+            "args": [],
+            "cwd": "${workspaceFolder:puzzles}",
+            "preLaunchTask": "swift: Build Release Puzzle"
+        }
+    ]
+}
