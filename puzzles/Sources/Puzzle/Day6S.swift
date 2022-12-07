@@ -1,8 +1,8 @@
+import Algorithms
 // swift run Puzzle day6-s
 // sliding window problem
 import ArgumentParser
 import Foundation
-import Algorithms
 
 struct Day6S: ParsableCommand {
   @Argument(help: "input file to evaluate")
@@ -27,7 +27,7 @@ func partX_day6sPuzzle(input: String, count: Int) -> Int {
   for (offset, window) in input.windows(ofCount: count).enumerated() {
     let windowSet = Set(window)
     if windowSet.count == count {
-      return offset + count + 1 
+      return offset + count + 1
     }
   }
   return -1

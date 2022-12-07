@@ -60,16 +60,16 @@ class Day6Tests: XCTestCase {
     let capacity = 14
     let input = "mjqjpqmgbljsphdztnvjfqwrcgsmlb"
     let lru = LRU(capacity: capacity)
-      let pos = { () -> Int in
-        for (offset, char) in input.enumerated() {
-          lru.set(key: char)
-          if lru.cache.count == capacity {
-            return offset + 1
-          }
+    let pos = { () -> Int in
+      for (offset, char) in input.enumerated() {
+        lru.set(key: char)
+        if lru.cache.count == capacity {
+          return offset + 1
         }
-        return -1
-      }()
-      XCTAssert(lru.cache.count == capacity)
-      XCTAssert(pos == 19, "pos: \(pos)")
+      }
+      return -1
+    }()
+    XCTAssert(lru.cache.count == capacity)
+    XCTAssert(pos == 19, "pos: \(pos)")
   }
 }
