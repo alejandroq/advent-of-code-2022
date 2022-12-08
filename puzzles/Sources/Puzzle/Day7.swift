@@ -14,13 +14,13 @@ struct Day7: ParsableCommand {
     }
 
     let inputs = data.split(whereSeparator: \.isNewline).map { String($0) }
-    
+
     let root = collect(inputs: inputs)
 
     measure {
       print("part 1: \(part1_day7Puzzle(root: root))")
     }
-    
+
     measure {
       print("part 2: \(part2_day7Puzzle(root: root))")
     }
@@ -83,7 +83,7 @@ func part2_day7Puzzle(root: Node) -> Int {
   let requiredDisk = 30_000_000
   let currentTotal = contents.size
   let delta = abs(totalDisk - requiredDisk - currentTotal)
-  
+
   return contents.dict
     .filter { (key, value) in
       return value > delta

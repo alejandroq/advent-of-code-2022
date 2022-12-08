@@ -30,39 +30,39 @@ class Day7Tests: XCTestCase {
       .getPath()
     XCTAssert(got == "abc/def", "got == \(got)")
   }
-  
+
   func testExample() {
     let inputs = """
-$ ls
-dir a
-14848514 b.txt
-8504156 c.dat
-dir d
-$ cd a
-$ ls
-dir e
-29116 f
-2557 g
-62596 h.lst
-$ cd e
-$ ls
-584 i
-$ cd ..
-$ cd ..
-$ cd d
-$ ls
-4060174 j
-8033020 d.log
-5626152 d.ext
-7214296 k
-$ cd d
-$ ls
-""".split(whereSeparator: \.isNewline).map { String($0) }
-    
+      $ ls
+      dir a
+      14848514 b.txt
+      8504156 c.dat
+      dir d
+      $ cd a
+      $ ls
+      dir e
+      29116 f
+      2557 g
+      62596 h.lst
+      $ cd e
+      $ ls
+      584 i
+      $ cd ..
+      $ cd ..
+      $ cd d
+      $ ls
+      4060174 j
+      8033020 d.log
+      5626152 d.ext
+      7214296 k
+      $ cd d
+      $ ls
+      """.split(whereSeparator: \.isNewline).map { String($0) }
+
     let root = collect(inputs: inputs)
-    
+
     let contents = root.getContents()
-    
+
     XCTAssert(contents.dict["//a/e"] == 584, "//a/e == \(contents.dict["//a/e"] ?? -1)")
     XCTAssert(contents.dict["//a"] == 94_853, "//a == \(contents.dict["//a"] ?? -1)")
     XCTAssert(contents.dict["//d"] == 24_933_642, "//d == \(contents.dict["//d"] ?? -1)")
