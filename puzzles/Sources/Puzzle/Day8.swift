@@ -17,9 +17,9 @@ struct Day8: ParsableCommand {
       print("part 1: \(part1_day8Puzzle(matrix: data.toIntMatrix()))")
     }
 
-     measure {
-       print("part 2: \(part2_day8ScenicScore(matrix: data.toIntMatrix()))")
-     }
+    measure {
+      print("part 2: \(part2_day8ScenicScore(matrix: data.toIntMatrix()))")
+    }
   }
 }
 

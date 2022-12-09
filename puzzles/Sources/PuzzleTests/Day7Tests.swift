@@ -70,6 +70,8 @@ class Day7Tests: XCTestCase {
   }
 
   func testContentsCorrectness() throws {
+    throw XCTSkip("forgot to commit the valid version and currently do not have it")
+
     guard
       let data = String(
         data: try! Data(contentsOf: URL(fileURLWithPath: "inputs/day7-inputs.txt")), encoding: .utf8
