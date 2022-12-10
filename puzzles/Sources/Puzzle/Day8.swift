@@ -2,6 +2,7 @@
 import ArgumentParser
 import Foundation
 
+// TODO could you integrate the raycast logic w/ Metal? That'd be interesting.
 struct Day8: ParsableCommand {
   @Argument(help: "input file to evaluate")
   var file: String = "inputs/day8-inputs.txt"
