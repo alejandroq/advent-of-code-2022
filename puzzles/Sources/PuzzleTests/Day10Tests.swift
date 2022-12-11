@@ -218,7 +218,7 @@ class CPUProcessor {
     return row.joined()
   }
 
-  @inlinable // ABI stability yadayada - inlines for "performance", but good to know about compiler outcomes.
+  @inlinable  // ABI stability yadayada - inlines for "performance", but good to know about compiler outcomes.
   func register(in cycle: Int) -> Int {
     cycles[0...cycle].sum()
   }
@@ -244,6 +244,12 @@ extension Sequence where Element == Int {
   func sum() -> Int {
     reduce(0) { partialResult, element in
       partialResult + element
+    }
+  }
+
+  func product() -> Int {
+    reduce(1) { partialResult, element in
+      partialResult * element
     }
   }
 }
