@@ -13,17 +13,17 @@ final class Day11Tests: XCTestCase {
     XCTAssertEqual(exampleInput.getMonkeys().count, 4)
   }
 
-//  These tests no longer work as `/ 3` is no longer used in "relief" analysis
-//  Kept for historical purposes.
-//
-//  func testMonkeyInspections() {
-//    XCTAssertEqual(day11_puzzle(input: exampleInput, rounds: 20), 10_605)
-//  }
-//
-//  func testPart1() {
-//    XCTAssertEqual(day11_puzzle(input: input, rounds: 20), 58_322)
-//  }
-  
+  //  These tests no longer work as `/ 3` is no longer used in "relief" analysis
+  //  Kept for historical purposes.
+  //
+  //  func testMonkeyInspections() {
+  //    XCTAssertEqual(day11_puzzle(input: exampleInput, rounds: 20), 10_605)
+  //  }
+  //
+  //  func testPart1() {
+  //    XCTAssertEqual(day11_puzzle(input: input, rounds: 20), 58_322)
+  //  }
+
   func testPart2() {
     XCTAssertEqual(day11_puzzle(input: input, rounds: 10_000), 13_937_702_909)
   }
